@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		749793FC2E7565F90004F9AC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 749793FB2E7565F90004F9AC /* Kingfisher */; };
+		749793FF2E7566A20004F9AC /* SKPhotoBrowser in Frameworks */ = {isa = PBXBuildFile; productRef = 749793FE2E7566A20004F9AC /* SKPhotoBrowser */; };
+		749794022E756C3A0004F9AC /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 749794012E756C3A0004F9AC /* Moya */; };
+		7497940D2E7577DE0004F9AC /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 7497940C2E7577DE0004F9AC /* CombineMoya */; };
+		749794102E757CF50004F9AC /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 7497940F2E757CF50004F9AC /* NVActivityIndicatorView */; };
+		749794122E757CF50004F9AC /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 749794112E757CF50004F9AC /* NVActivityIndicatorViewExtended */; };
+		7497941C2E758F550004F9AC /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7497941B2E758F550004F9AC /* IQKeyboardManagerSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		74DEF3F62E7457BB00DCE0F5 /* Albums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,16 +46,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7497941C2E758F550004F9AC /* IQKeyboardManagerSwift in Frameworks */,
+				749793FF2E7566A20004F9AC /* SKPhotoBrowser in Frameworks */,
+				749794102E757CF50004F9AC /* NVActivityIndicatorView in Frameworks */,
+				749793FC2E7565F90004F9AC /* Kingfisher in Frameworks */,
+				749794122E757CF50004F9AC /* NVActivityIndicatorViewExtended in Frameworks */,
+				7497940D2E7577DE0004F9AC /* CombineMoya in Frameworks */,
+				749794022E756C3A0004F9AC /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7497940B2E7577DE0004F9AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74DEF3ED2E7457BB00DCE0F5 = {
 			isa = PBXGroup;
 			children = (
 				74DEF3F82E7457BB00DCE0F5 /* Albums */,
+				7497940B2E7577DE0004F9AC /* Frameworks */,
 				74DEF3F72E7457BB00DCE0F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +103,13 @@
 			);
 			name = Albums;
 			packageProductDependencies = (
+				749793FB2E7565F90004F9AC /* Kingfisher */,
+				749793FE2E7566A20004F9AC /* SKPhotoBrowser */,
+				749794012E756C3A0004F9AC /* Moya */,
+				7497940C2E7577DE0004F9AC /* CombineMoya */,
+				7497940F2E757CF50004F9AC /* NVActivityIndicatorView */,
+				749794112E757CF50004F9AC /* NVActivityIndicatorViewExtended */,
+				7497941B2E758F550004F9AC /* IQKeyboardManagerSwift */,
 			);
 			productName = Albums;
 			productReference = 74DEF3F62E7457BB00DCE0F5 /* Albums.app */;
@@ -107,6 +139,13 @@
 			);
 			mainGroup = 74DEF3ED2E7457BB00DCE0F5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				749793FA2E7565F90004F9AC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				749793FD2E7566A20004F9AC /* XCRemoteSwiftPackageReference "SKPhotoBrowser" */,
+				749794002E756C3A0004F9AC /* XCRemoteSwiftPackageReference "Moya" */,
+				7497940E2E757CF50004F9AC /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				7497941A2E758F550004F9AC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 74DEF3F72E7457BB00DCE0F5 /* Products */;
 			projectDirPath = "";
@@ -333,6 +372,87 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		749793FA2E7565F90004F9AC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
+		749793FD2E7566A20004F9AC /* XCRemoteSwiftPackageReference "SKPhotoBrowser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/suzuki-0000/SKPhotoBrowser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+		749794002E756C3A0004F9AC /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		7497940E2E757CF50004F9AC /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		7497941A2E758F550004F9AC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		749793FB2E7565F90004F9AC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 749793FA2E7565F90004F9AC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		749793FE2E7566A20004F9AC /* SKPhotoBrowser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 749793FD2E7566A20004F9AC /* XCRemoteSwiftPackageReference "SKPhotoBrowser" */;
+			productName = SKPhotoBrowser;
+		};
+		749794012E756C3A0004F9AC /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 749794002E756C3A0004F9AC /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		7497940C2E7577DE0004F9AC /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 749794002E756C3A0004F9AC /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		7497940F2E757CF50004F9AC /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7497940E2E757CF50004F9AC /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		749794112E757CF50004F9AC /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7497940E2E757CF50004F9AC /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+		7497941B2E758F550004F9AC /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7497941A2E758F550004F9AC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74DEF3EE2E7457BB00DCE0F5 /* Project object */;
 }

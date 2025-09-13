@@ -44,6 +44,14 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGN-Nw-d5r" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="171.66666666666666" y="401" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LSX-f9-w5f"/>
+                                    <constraint firstAttribute="width" constant="50" id="b0B-cw-ewl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -52,12 +60,15 @@
                             <constraint firstItem="lvQ-ui-Jew" firstAttribute="top" secondItem="vCX-9e-sFz" secondAttribute="bottom" constant="10" id="5fi-Bt-A9y"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lvQ-ui-Jew" secondAttribute="bottom" constant="10" id="GWG-Wb-U18"/>
                             <constraint firstAttribute="trailing" secondItem="vCX-9e-sFz" secondAttribute="trailing" constant="10" id="T3I-ch-k2U"/>
+                            <constraint firstItem="mGN-Nw-d5r" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="ZDy-Qu-Sf5"/>
                             <constraint firstItem="vCX-9e-sFz" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="10" id="ctZ-5E-xoT"/>
+                            <constraint firstItem="mGN-Nw-d5r" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="iPs-jp-WaN"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lvQ-ui-Jew" secondAttribute="trailing" constant="10" id="nBt-3Q-daW"/>
                             <constraint firstItem="lvQ-ui-Jew" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="zfY-HD-NoL"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="indicator" destination="mGN-Nw-d5r" id="1iC-ue-17C"/>
                         <outlet property="photosCV" destination="lvQ-ui-Jew" id="d6I-LG-t3f"/>
                         <outlet property="searchBar" destination="vCX-9e-sFz" id="zJj-hH-OI8"/>
                     </connections>

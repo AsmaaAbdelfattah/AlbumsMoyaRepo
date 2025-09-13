@@ -14,5 +14,8 @@ class PhotosCVCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    func injectCell(photo: Photos){
+        photoImg.setPlaceHolder(img: photo.url)
+    }
 }

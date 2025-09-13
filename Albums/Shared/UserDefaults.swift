@@ -24,21 +24,21 @@ extension UserDefaults{
     func getBase() -> String{
         return string(forKey: UserDefaultsKey.baseUrl.rawValue) ?? "en"
     }
-//    func saveUser(_ user:  User) {
-//        let encoder = JSONEncoder()
-//        if let encodedData = try? encoder.encode(user) {
-//            UserDefaults.standard.set(encodedData, forKey: "user")
-//        }
-//    }
-//
-//    // Retrieve custom object from UserDefaults
-//    func getUser() -> User? {
-//        if let savedData = UserDefaults.standard.data(forKey: "user") {
-//            let decoder = JSONDecoder()
-//            if let user = try? decoder.decode(User.self, from: savedData) {
-//                return user
-//            }
-//        }
-//        return nil
-//    }
+    func saveUser(_ user:  User) {
+        let encoder = JSONEncoder()
+        if let encodedData = try? encoder.encode(user) {
+            UserDefaults.standard.set(encodedData, forKey: "user")
+        }
+    }
+
+    // Retrieve custom object from UserDefaults
+    func getUser() -> User? {
+        if let savedData = UserDefaults.standard.data(forKey: "user") {
+            let decoder = JSONDecoder()
+            if let user = try? decoder.decode(User.self, from: savedData) {
+                return user
+            }
+        }
+        return nil
+    }
 }
