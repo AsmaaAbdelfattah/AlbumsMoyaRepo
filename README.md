@@ -37,5 +37,7 @@ It demonstrates how to fetch user data from an API, display a random user's albu
 
 ## 📷 Screenshots
 *(Add screenshots here if available)*  
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-13 at 14 30 48" src="https://github.com/user-attachments/assets/3b3bf3e2-b855-47ad-9393-616aeec8f6a9" />
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-13 at 14 52 37" src="https://github.com/user-attachments/assets/b1a6f164-19fc-4c01-8367-f98508a11476" />
 
 ---
