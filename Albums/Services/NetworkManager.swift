@@ -39,7 +39,7 @@ class NetworkManager :NetworkManagerProtocol{
                                print("Response JSON: \(jsonString)")
                            }
                        })
-            .retry(2)
+            .retry(3).timeout(.seconds(60), scheduler: DispatchQueue.main)
             .tryMap { response -> [T] in
                 do {
                      let data = try JSONDecoder().decode([T].self, from: response.data)

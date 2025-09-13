@@ -68,10 +68,12 @@ extension AlbumDetailsVC: UICollectionViewDelegate , UICollectionViewDataSource 
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
       //MARK: open image with zooming
-        let photo = SKPhoto.photoWithImageURL( viewModel.photos[indexPath.row].url)
+        let photo = SKPhoto.photoWithImageURL( viewModel.photos[indexPath.row].url,holder: UIImage(named: "placeholder"))
         // Create and Present the Photo Browser
+        SKPhotoBrowserOptions.displayAction = true
         let browser = SKPhotoBrowser(photos:[photo])
         browser.initializePageIndex(0) // Start at the first image
+        browser.delegate = self
         present(browser, animated: true, completion: nil)
     }
     
@@ -100,4 +102,13 @@ extension AlbumDetailsVC:UISearchBarDelegate{
         photosCV.reloadData()
     }
     
+}
+//MARK: handle share
+extension AlbumDetailsVC: SKPhotoBrowserDelegate {
+    private func didShowActionSheet(_ browser: SKPhotoBrowser) {
+        guard let image = browser.photos[browser.currentPageIndex].underlyingImage else { return }
+        
+        let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        present(activityVC, animated: true)
+    }
 }
