@@ -7,7 +7,8 @@ It demonstrates how to fetch user data from an API, display a random user's albu
 
 ## 🚀 Features
 - ✅ **MVVM Architecture** for clean separation of concerns.  
-- ✅ **Moya** for networking and API requests.  
+- ✅ **Moya** for networking and API requests.
+- ✅ **Combine** for binding data .  
 - ✅ **UIKit** for UI components (UITableView & UICollectionView).  
 - ✅ **Kingfisher** to load images efficiently with caching & placeholders.  
 - ✅ **SKPhotoBrowser** for full-screen image viewing with zoom and **share support**.  
